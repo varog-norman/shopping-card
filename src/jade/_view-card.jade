@@ -1,0 +1,48 @@
+div
+	span.data-title Your Shopping Cart
+	a(href='').link CONTINUE SHOPPING
+	.data-separator
+	.items-table_titles
+		ul.items-table_titles_list 
+			li.items-table_titles_list_cell-1 ITEM
+			li.items-table_titles_list_cell-2 QUANTITY
+			li.items-table_titles_list_cell-3 PRICE
+			li.items-table_titles_list_cell-4 CHANGE
+	.data-separator
+	.items-table
+		ul
+			li
+				ul.items-table_item
+					li.items-table_item_cell-1
+						img(src='images/item-little.png').items-table_item_cell-1_photo
+						div
+							span.items-table_item_cell-1_description PERSONAL SHOPPER PACKAGE
+					li.items-table_item_cell-2
+						div
+							input(type='button').button-minus
+							span.items-table_item_cell-2_quantity 1
+							input(type='button').button-plus
+					li.items-table_item_cell-3
+						div
+							span.items-table_item_cell-3_price $69.00
+					li.items-table_item_cell-4
+						div.items-table_item_cell-4_remove
+								img(src='images/button-remove.png')
+								span REMOVE
+	.total
+		.total_amount
+			.total_amount_text
+				.total_amount_entry SUBTOTAL
+				.total_amount_entry TAX
+				.total_amount_entry SHIPPING
+				.total_amount_entry-big TOTAL
+			.total_amount_numbers
+				.total_amount_entry#subtotal $0.00
+				.total_amount_entry#tax $0.00
+				.total_amount_entry#shipping $0.00
+				.total_amount_entry-big#total $00.00
+		.link.promo-code ADD PROMO CODE
+	.button-box
+		.link HAPPINESS GUARANTEE!
+		input(type='button', value='NEXT - PAYMENT')
+

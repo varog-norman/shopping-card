@@ -1,0 +1,401 @@
+*
+    margin 0
+    padding 0
+
+body
+	width 100%
+	margin 0 auto
+	
+ul 
+	list-style none
+	
+.header
+	width 100%
+	height 73px
+	
+.site-logo
+	display inline-block
+	position relative
+	width 239px
+	height 51px
+	left 50%
+	transform translateX(-50%)
+	margin-top 10px
+	margin-bottom 12px
+	background-image url(../images/site-logo-big.png)
+	
+.logo-buttons
+	display inline-block
+	position absolute
+	height 32px
+	right 145px
+	margin-top 22px
+	margin-bottom 19px
+	
+	&_help
+		font-family Justus
+		font-size 14px
+		font-weight normal
+		line-height 16px
+		color #78a8bb
+		font-style italic
+		text-decoration none
+		
+		&:hover
+			text-decoration underline
+		
+	&_login
+		width 67px
+		height 32px
+		margin-left 10px
+		border none
+		border-radius 3px
+		background none
+		background-color #78a8bb
+		color #fff
+		font-family Futura
+		font-size 12px
+		line-height 22px
+		
+		&:hover
+			opacity 0.8
+			cursor pointer
+			
+		&:active
+			opacity 1
+			
+.content
+	width 100%
+	background-color #F7F7F7
+	padding-bottom 60px
+	
+	&_title
+		display inline-block
+		position relative
+		width 550px
+		height 53px
+		left 50%
+		transform translateX(-50%)
+		margin-top 45px
+		margin-bottom 30px
+		text-shadow 0 1px 0 rgba(0, 0, 0, 0.2)
+		
+		&_first
+			font-family Futura
+			font-size 28px
+			line-height 33px
+			text-align center
+			color #222
+			
+		&_second
+			font-family Justus
+			font-size 18px
+			line-height 20px
+			font-weight normal
+			font-style italic
+			text-align center
+			color #999
+			
+	&_status
+		display inline-block
+		position relative
+		width 940px
+		height 60px
+		left 50%
+		transform translateX(-50%)
+		margin-bottom 34px
+		
+		&_separator
+			position relative
+			top 18px
+			width 100%
+			height 1px
+			background-color #dfdfdf
+			border-bottom 1px #dfdfdf
+			
+		&_circles
+			height 38px
+			list-style none
+			
+		&_circle
+			position relative
+			float left
+			width 36px
+			height 36px
+			border 1px solid #999
+			border-radius 50%
+			background-color #fff
+			font-family Futura
+			font-size 14px
+			line-height 36px
+			text-align center
+			color #999
+			font-weight 500
+			margin-left 177px
+			z-index 666
+			
+			&:first-child
+				margin-left 246px
+				
+				&::after
+					position absolute
+					width 200px
+					top 38px
+					left -230%
+					font-size 18px
+					line-height 36px
+					font-style italic
+					font-weight normal
+					content 'View Cart'
+					
+			&:nth-child(2)
+				
+				&::after
+					position absolute
+					width 200px
+					top 38px
+					left -230%
+					font-size 18px
+					line-height 36px
+					font-style italic
+					font-weight normal
+					content 'Payment'
+					
+			&:last-child
+				
+				&::after
+					position absolute
+					width 200px
+					top 38px
+					left -230%
+					font-size 18px
+					line-height 36px
+					font-style italic
+					font-weight normal
+					content 'Additional info'
+					
+	&_box
+		display inline-block
+		position relative
+		width 940px
+		left 50%
+		transform translateX(-50%)
+
+.marked
+	border 1px solid #222
+	color #222
+	
+.user-data
+	display inline-block
+	width 620px
+	background-color #fff
+	padding 30px 20px
+	box-sizing border-box
+	
+.content-image
+	width 300px
+	height 348px
+	float right
+	background-image url(../images/item-big.png)
+
+.footer
+	width 100%
+	min-height 247px
+	background-color #EDEDED
+	
+	&_content
+		display inline-block
+		position relative
+		width 940px
+		min-height 183px
+		left 50%
+		transform translateX(-50%)
+		margin-top 29px
+		
+		&_menus
+			list-style none
+			
+		&_menu
+			width 235px
+			min-height 183px
+			float left
+			padding-left 20px
+			box-sizing border-box
+			
+			&::before
+				position absolute
+				margin-left -20px
+				content ''
+				width 1px
+				height 100%
+				border-left 1px solid #dfdfdf
+				
+			&:first-child
+				padding-left 0
+				
+				&::before
+					display none
+					
+			&_list
+				margin-top -7px
+				
+				span
+					font-family Futura
+					font-size 14px
+					line-height 26px
+					color #222
+					font-weight 500
+					
+				li 
+					a 
+						font-family Futura
+						font-size 12px
+						line-height 26px
+						color #78a8bb
+						font-weight 500
+						text-decoration none
+						
+						&:hover
+							text-decoration underline
+							
+.data-separator
+	width 578px
+	height 1px 
+	border-bottom 1px solid #dfdfdf
+	margin 15px auto
+	
+.link
+	font-family Futura
+	font-size 12px
+	line-height 24px
+	color #78a8bb
+	font-weight 500
+	text-decoration none
+	margin 0 6px
+	cursor pointer
+	
+	&:hover
+		text-decoration underline
+		
+.data-title
+	font-family Justus
+	font-size 18px
+	font-weight normal
+	line-height 22px
+	color #222
+	font-style italic
+	margin-right 6px
+	
+.button-box
+	margin-top 20px
+	text-align right
+	
+	.link
+		display inline-block
+		
+	input
+		min-width 67px
+		height 32px
+		margin-left 10px
+		border none
+		border-radius 3px
+		background none
+		background-color #78a8bb
+		color #fff
+		font-family Futura
+		font-size 12px
+		line-height 22px
+		padding 0 10px
+		
+		&:hover
+			opacity 0.8
+			cursor pointer
+			
+		&:active
+			opacity 1
+
+.grey-button
+	background-color #EDEDED !important
+	color #78a8bb !important
+			
+.white-background
+	position fixed
+	width 100%
+	height 100%
+	overflow hidden
+	z-index 667
+	
+.popup
+	position absolute
+	width 620px
+	min-height 320px
+	left 50%
+	top 50%
+	transform translate(-50%, -50%)
+	background-color #fff 
+	z-index 668
+	box-shadow 0 5px 25px #222
+	padding 30px 20px
+	box-sizing border-box
+	
+	&_close
+		position absolute
+		width 11px
+		height 11px
+		top 30px
+		right 30px
+		background-image url(../images/popup-close.png)
+		z-index 669
+		
+	h1
+		font-family Futura
+		font-size 28px
+		line-height 33px
+		text-align center
+		color #222
+		
+	h4
+		font-family Justus
+		font-size 18px
+		line-height 20px
+		font-weight normal
+		font-style italic
+		text-align center
+		color #222
+		
+	p 
+		font-family Futura
+		font-size 14px
+		line-height 20px
+		color #222
+		font-weight 500
+		margin-left 10px
+		
+.wrong-data
+	border 1px solid #ff5730 !important
+
+.len-50
+	width 50px !important
+		
+.len-100
+	width 100px !important
+	
+.len-150
+	width 150px !important
+	
+.len-200
+	width 200px !important
+	
+.len-260
+	width 260px !important
+	
+.alert-message-red
+	width 620px
+	min-height 40px
+	font-family Futura
+	font-size 14px
+	line-height 20px 
+	
+.alert-message-green
+	width 620px
+	min-height 40px

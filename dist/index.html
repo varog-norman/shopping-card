@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping card</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="header"><a href="">
+        <div class="site-logo"></div></a>
+      <div class="logo-buttons"><a href="" class="logo-buttons_help">Help</a>
+        <button class="logo-buttons_login">LOGIN</button>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content_title">
+        <div class="content_title_first">COMPLETE YOUR ORDER</div>
+        <div class="content_title_second">Making interior design personal, affordable and easy</div>
+      </div>
+      <div class="content_status">
+        <div class="content_status_separator"></div>
+        <ul class="content_status_circles">
+          <li class="content_status_circle">1</li>
+          <li class="content_status_circle">2</li>
+          <li class="content_status_circle">3</li>
+        </ul>
+      </div>
+      <div class="content_box">
+        <div class="user-data">
+          <div><span class="data-title">Your Shopping Cart</span><a href="" class="link">CONTINUE SHOPPING</a>
+            <div class="data-separator"></div>
+            <div class="items-table_titles">
+              <ul class="items-table_titles_list"> 
+                <li class="items-table_titles_list_cell-1">ITEM</li>
+                <li class="items-table_titles_list_cell-2">QUANTITY</li>
+                <li class="items-table_titles_list_cell-3">PRICE</li>
+                <li class="items-table_titles_list_cell-4">CHANGE</li>
+              </ul>
+            </div>
+            <div class="data-separator"></div>
+            <div class="items-table">
+              <ul>
+                <li>
+                  <ul class="items-table_item">
+                    <li class="items-table_item_cell-1"><img src="images/item-little.png" class="items-table_item_cell-1_photo">
+                      <div><span class="items-table_item_cell-1_description">PERSONAL SHOPPER PACKAGE</span></div>
+                    </li>
+                    <li class="items-table_item_cell-2">
+                      <div>
+                        <input type="button" class="button-minus"><span class="items-table_item_cell-2_quantity">1</span>
+                        <input type="button" class="button-plus">
+                      </div>
+                    </li>
+                    <li class="items-table_item_cell-3">
+                      <div><span class="items-table_item_cell-3_price">$69.00</span></div>
+                    </li>
+                    <li class="items-table_item_cell-4">
+                      <div class="items-table_item_cell-4_remove"><img src="images/button-remove.png"><span>REMOVE</span></div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="total">
+              <div class="total_amount">
+                <div class="total_amount_text">
+                  <div class="total_amount_entry">SUBTOTAL</div>
+                  <div class="total_amount_entry">TAX</div>
+                  <div class="total_amount_entry">SHIPPING</div>
+                  <div class="total_amount_entry-big">TOTAL</div>
+                </div>
+                <div class="total_amount_numbers">
+                  <div id="subtotal" class="total_amount_entry">$0.00</div>
+                  <div id="tax" class="total_amount_entry">$0.00</div>
+                  <div id="shipping" class="total_amount_entry">$0.00</div>
+                  <div id="total" class="total_amount_entry-big">$00.00</div>
+                </div>
+              </div>
+              <div class="link promo-code">ADD PROMO CODE</div>
+            </div>
+            <div class="button-box">
+              <div class="link">HAPPINESS GUARANTEE!</div>
+              <input type="button" value="NEXT - PAYMENT">
+            </div>
+          </div>
+          <div> 
+            <div class="data-title">Your Billing Information</div>
+            <div class="data-separator"></div>
+            <div class="input-with-description">
+              <div>FIRST NAME</div>
+              <input type="text">
+            </div>
+            <div class="input-with-description">
+              <div>LAST NAME</div>
+              <input type="text">
+            </div><br>
+            <div class="input-with-description">
+              <div>ZIP CODE</div>
+              <input type="text" class="len-100">
+            </div><br>
+            <div class="input-with-description">
+              <div>CARD NUMBER</div>
+              <input type="text" class="len-260">
+            </div><br>
+            <div class="input-with-description">
+              <div>EXPIRATION DATE</div>
+              <select>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+              </select>
+              <select>
+                <option>2017</option>
+                <option>2018</option>
+                <option>2019</option>
+              </select>
+            </div>
+            <div class="input-with-description">
+              <div>CVV</div>
+              <input type="text" class="len-50">
+            </div>
+            <div class="button-box">
+              <div class="link">HAPPINESS GUARANTEE!</div>
+              <input type="button" value="PLACE ORDER">
+            </div>
+          </div>
+          <div> 
+            <div class="data-title">Basic Information</div>
+            <div class="data-separator"></div><span class="free-text">I am looking for a </span>
+            <input type="text" placeholder="product (ex. chair, sofa)" class="additional-info-input"><span class="free-text"> for my</span>
+            <input type="text" placeholder="room (ex. living room, bedroom)" class="additional-info-input len-200"><span class="free-text"> in</span>
+            <input type="text" placeholder="color or materials" class="additional-info-input"><span class="free-text"> and my budget is</span>
+            <input type="text" placeholder="price (ex. $500)" class="additional-info-input"><span class="free-text"> .</span><br><br>
+            <div class="additional-info-title">ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS</div>
+            <textarea placeholder="Helpful information would be approximately demensions of the product you're looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc"></textarea><br><br>
+            <div class="data-title">Upload Photos</div>
+            <div class="data-separator"></div><span class="free-text_little">The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room. Capture key colors, textures and patterns that you want to keep.</span>
+            <div class="dnd">
+              <div class="dnd_container">
+                <div class="dnd_container_image"></div>
+                <div class="dnd_container_text"><span>DRAG AND DROP PHOTOS HERE</span><br><span>OR</span>
+                  <div class="link">SELECT FILE TO UPLOAD</div>
+                </div>
+              </div>
+            </div>
+            <div class="button-box">
+              <input type="button" value="SAVE DRAFT" class="grey-button">
+              <input type="button" value="SEND TO DESIGNER">
+            </div>
+          </div>
+        </div>
+        <div class="content-image"></div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer_content">
+        <ul class="footer_content_menus">
+          <li class="footer_content_menu"><a href=""><img src="images/site-logo-little.png"></a></li>
+          <li class="footer_content_menu">
+            <ul class="footer_content_menu_list"><span>DESIGN</span>
+              <li> <a href="">FINDS FOR YOU</a></li>
+              <li> <a href="">DESIGNER ADVICE</a></li>
+              <li> <a href="">CREATE A BOARD</a></li>
+            </ul>
+          </li>
+          <li class="footer_content_menu">
+            <ul class="footer_content_menu_list"><span>ABOUT</span>
+              <li> <a href="">WHAT IS DECORIST?</a></li>
+              <li> <a href="">HELP</a></li>
+              <li> <a href="">MEET OUR DESIGNERS</a></li>
+              <li> <a href="">TERMS OF SERVICE</a></li>
+              <li> <a href="">PRIVACY POLICY</a></li>
+            </ul>
+          </li>
+          <li class="footer_content_menu">
+            <ul class="footer_content_menu_list"><span>STAY IN TOUCH</span>
+              <li> <a href="">BLOG</a></li>
+              <li> <a href="">FACEBOOK</a></li>
+              <li> <a href="">TWITTER</a></li>
+              <li> <a href="">PINTEREST</a></li>
+              <li> <a href="">EMAIL</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>

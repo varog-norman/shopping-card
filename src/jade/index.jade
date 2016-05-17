@@ -1,0 +1,74 @@
+doctype html
+html
+	head
+		meta(charset='utf-8')
+		title Shopping card
+		link(rel='stylesheet', href='css/style.css')
+	body
+		
+		.header
+			a(href='')
+				.site-logo
+			.logo-buttons
+				a(href='').logo-buttons_help Help
+				button.logo-buttons_login LOGIN
+		.content
+			.content_title
+				.content_title_first COMPLETE YOUR ORDER
+				.content_title_second.
+					Making interior design personal, affordable and easy
+			.content_status
+				.content_status_separator
+				ul.content_status_circles
+					li.content_status_circle 1
+					li.content_status_circle 2
+					li.content_status_circle 3
+			.content_box
+				.user-data
+					include _view-card
+					include _payment
+					include _additional-info
+				.content-image
+		.footer
+			.footer_content
+				ul.footer_content_menus
+					li.footer_content_menu
+						a(href='')
+							img(src='images/site-logo-little.png')
+					li.footer_content_menu
+						ul.footer_content_menu_list
+							span DESIGN
+							li 
+								a(href='') FINDS FOR YOU
+							li 
+								a(href='') DESIGNER ADVICE
+							li 
+								a(href='') CREATE A BOARD
+					li.footer_content_menu
+						ul.footer_content_menu_list
+							span ABOUT
+							li 
+								a(href='') WHAT IS DECORIST?
+							li 
+								a(href='') HELP
+							li 
+								a(href='') MEET OUR DESIGNERS
+							li 
+								a(href='') TERMS OF SERVICE
+							li 
+								a(href='') PRIVACY POLICY
+					li.footer_content_menu
+						ul.footer_content_menu_list
+							span STAY IN TOUCH
+							li 
+								a(href='') BLOG
+							li 
+								a(href='') FACEBOOK
+							li 
+								a(href='') TWITTER
+							li 
+								a(href='') PINTEREST
+							li 
+								a(href='') EMAIL
+        
+		script(src='js/script.js')

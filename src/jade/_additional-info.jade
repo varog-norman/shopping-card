@@ -1,0 +1,43 @@
+div 
+	.data-title Basic Information
+	.data-separator
+	span.free-text
+		| I am looking for a 
+	input(type='text' placeholder='product (ex. chair, sofa)').additional-info-input
+	span.free-text
+		|  for my
+	input(type='text' placeholder='room (ex. living room, bedroom)').additional-info-input.len-200
+	span.free-text
+		|  in
+	input(type='text' placeholder='color or materials').additional-info-input
+	span.free-text
+		|  and my budget is
+	input(type='text' placeholder='price (ex. $500)').additional-info-input
+	span.free-text
+		|  .
+	br
+	br
+	div.additional-info-title
+		| ANY ADDITIONAL INFORMATION SHARE HELPS US GIVE THE BEST RECOMMENDATIONS
+	textarea(placeholder='Helpful information would be approximately demensions of the product you\'re looking for, other items your planning on replacing in your room, materials you prefer, materials or colors you like or do not like, etc')
+	br
+	br
+
+	.data-title Upload Photos
+	.data-separator
+	span.free-text_little
+		| The best photos capture the key features of the room (main furniture, layout, room features) from 2 or 3 corners of the room. Capture key colors, textures and patterns that you want to keep.
+	.dnd
+		.dnd_container
+			.dnd_container_image
+			.dnd_container_text
+				span
+					| DRAG AND DROP PHOTOS HERE
+				br
+				span
+					| OR
+				.link SELECT FILE TO UPLOAD
+
+	.button-box
+		input(type='button', value='SAVE DRAFT').grey-button
+		input(type='button', value='SEND TO DESIGNER')

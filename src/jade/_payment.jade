@@ -1,0 +1,35 @@
+div 
+	.data-title Your Billing Information
+	.data-separator
+	.input-with-description
+		div FIRST NAME
+		input(type='text')
+	.input-with-description
+		div LAST NAME
+		input(type='text')
+	br
+	.input-with-description
+		div ZIP CODE
+		input(type='text').len-100
+	br
+	.input-with-description
+		div CARD NUMBER
+		input(type='text').len-260
+	br
+	.input-with-description
+		div EXPIRATION DATE
+		select
+			option 12
+			option 13
+			option 14
+		select
+			option 2017
+			option 2018
+			option 2019
+	.input-with-description
+		div CVV
+		input(type='text').len-50
+
+	.button-box
+		.link HAPPINESS GUARANTEE!
+		input(type='button', value='PLACE ORDER')
